@@ -1,4 +1,4 @@
-<?php
+<?
     include "1Lib.php";
     $idx = $_GET['idx'];
     $memo = $_GET['memo'];
