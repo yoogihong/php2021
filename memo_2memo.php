@@ -1,6 +1,4 @@
-<?php
-      include "1Lib.php";
- ?>
+<? include "1Lib.php"; ?>
  
  <!DOCTYPE html>
  <html lang="ko">
@@ -18,7 +16,7 @@
               <input type="submit" value="저장">
     </form>
     
-<?php
+<?
     $query = "select * from memo";
     $result = mysqli_query($connect, $query);
 ?>
@@ -33,9 +31,7 @@
       <td> 삭제 </td>
   </tr>
   
-<?php
-    while($data = mysqli_fetch_array($result)){
-?>
+<? while($data = mysqli_fetch_array($result)){ ?>
   <tr>
       <td> <td> <?=$data['idx']?> </td>
       <td> <?=$data['name']?> </td>
@@ -46,9 +42,7 @@
       <td> <a href="#" onclick="editData('<?=$data['idx']?>');">수정</a> 
   </tr>
 
-<?php
-   }
-?>
+<? } ?>
 </table>
 
 <script>
